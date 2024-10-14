@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Menú Desplegable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Logo</div>
+        <input type="text" class="search-input" placeholder="Buscar...">
+        <div class="search-icon">🔍</div>
+    </div>
+
+    <div class="container">
+        <div id="menu" class="menu">
+            <a href="#" onclick="showSection('clientes')">Clientes</a>
+            <a href="#" onclick="showSection('fotografias')">Fotografías</a>
+            <a href="#" onclick="showSection('albums')">Álbums</a>
+        </div>
+
+        <div class="main-content">
+            <h2 id="section-title">Clientes</h2>
+            <table id="content-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Teléfono</th>
+                        <th>Evento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan</td>
+                        <td>Pérez</td>
+                        <td>555-555-555</td>
+                        <td>Boda</td>
+                    </tr>
+                    <tr>
+                        <td>Ana</td>
+                        <td>García</td>
+                        <td>555-555-556</td>
+                        <td>Cumpleaños</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
